@@ -1,6 +1,7 @@
 lockfileVersion: 5.3
 
 specifiers:
+  '@n1kk/eslint-config': link:/Users/n1kk/dev/npm/_incubator/eslint-configs
   '@types/eslint': ^8.2.2
   '@types/jest': ^27.4.0
   '@types/prettier': ^2.4.3
@@ -15,6 +16,9 @@ specifiers:
   rimraf: ^3.0.2
   ts-jest: ^27.1.2
   typescript: ^4.5.4
+
+dependencies:
+  '@n1kk/eslint-config': link:../_incubator/eslint-configs
 
 devDependencies:
   '@types/eslint': 8.2.2

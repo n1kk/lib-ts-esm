@@ -2,23 +2,28 @@
   "compilerOptions": {
     "target": "ESNext",
     "lib": ["esnext"],
-    "types": ["node", "jest"],
-    "checkJs": true,
-    "strict": true,
-    "forceConsistentCasingInFileNames": true,
+    "module": "esnext",
+    "moduleResolution": "node",
     "esModuleInterop": true,
     "isolatedModules": true,
-    "sourceMap": true,
-    "importsNotUsedAsValues": "error",
-    "module": "esnext",
+    "outDir": "dist",
+    "rootDir": "src",
+    "types": ["node", "jest"],
+
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": false,
+
+    "strict": true,
+    "declaration": true,
     "allowJs": true,
-    "moduleResolution": "node",
+    "checkJs": true,
+    "sourceMap": true,
+    "forceConsistentCasingInFileNames": true,
+    "importsNotUsedAsValues": "error",
     "resolveJsonModule": true,
     "incremental": true,
-    "downlevelIteration": true,
-    "declaration": true,
-    "outDir": "dist"
+    "downlevelIteration": true
   },
-  "include": ["index.ts"],
-  "exclude": ["node_modules"]
+  "include": ["src/*.ts"],
+  "exclude": ["node_modules", "**/*.spec.ts"]
 }

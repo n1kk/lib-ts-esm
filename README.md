@@ -6,10 +6,12 @@
 - `prettier`
 - `eslint`
 - `husky` + `lint-staged`
-- `pnpm` (_optional_)
-- access: public
-- entry point override for publishing (only if pnpm), otherwise update the `main` field
+- `pnpm`: recommended
+  - entry point override for publishing, for other packagers update the `exports` field
+  - access: public
 
 ```bash
+degit n1kk/lib-ts-esm
 pnpx degit n1kk/lib-ts-esm
+npx degit n1kk/lib-ts-esm
 ```

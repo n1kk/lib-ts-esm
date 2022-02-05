@@ -10,16 +10,23 @@
     "__BROILERPLATE__"
   ],
   "type": "module",
-  "main": "src/index.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./sub-export": {
+      "types": "./dist/sub-export.d.ts",
+      "default": "./dist/sub-export.js"
+    }
+  },
   "sideEffects": true,
   "files": [
-    "dist/index.js",
-    "dist/index.d.ts"
+    "dist/*.js",
+    "dist/*.d.ts"
   ],
   "publishConfig": {
-    "access": "public",
-    "main": "dist/index.js",
-    "typings": "dist/index.d.ts"
+    "access": "public"
   },
   "scripts": {
     "build": "rimraf dist && pnpm tsc -b ./tsconfig.json",
@@ -55,5 +62,8 @@
     "*.{js,vue,ts}": [
       "eslint --fix --ignore-pattern '!.eslintrc.cjs'"
     ]
+  },
+  "dependencies": {
+    "@n1kk/eslint-config": "link:/Users/n1kk/dev/npm/_incubator/eslint-configs"
   }
 }

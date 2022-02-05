@@ -1,6 +1,6 @@
 /**
  * https://github.com/DefinitelyTyped/DefinitelyTyped/blob/master/types/eslint/index.d.ts#L715
- * @type {import("eslint").Linter.Config} name A name to use.
+ * @type {import("eslint").Linter.Config}
  */
 module.exports = {
     root: true,
